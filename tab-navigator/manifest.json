@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Search Result Navigator",
+    "version": "1.0",
+    "description": "TabとEnterでGoogle検索結果を操作",
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.google.com/search*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ]
+}
