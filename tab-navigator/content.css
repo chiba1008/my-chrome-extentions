@@ -1,0 +1,8 @@
+.custom-marker {
+    color: orange;
+    background-color: #ffeeba;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-family: monospace;
+}
